@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/formbackend.css"> 
+    <title>Resultados del Formulario</title>
+
+    <header class="header">
+    <div class="header__text">
+      <h1>Calcule la eficiencia energética de su hogar</h1>
+      <p>Tome la iniciativa y resuelva el problema del consumo excesivo de energía</p>
+    </div>
+    </header>
+
+</head>
+
+<body>
+    
+    {% block content %}
+    <h1>Gracias por llenar el Formulario</h1><br>
+
+    <h2>Esta es tu información enviada:</h2><br>
+    
+    <p>Tu nombre: {{ name }}</p>
+    <p>Tu E-mail: {{ email }}</p>
+    <p>Tu direccion: {{ address }}</p>
+    <p>Tu fecha: {{ date }}</p>
+    <p>Tu Edad: {{ age }}</p>
+    <p>Tu Telefono: {{ phone }}</p>
+
+    {% endblock %}
+</body>
+</html>
